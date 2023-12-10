@@ -139,7 +139,7 @@ namespace xadrez
             if (estaEmXeque(jogadorAtual))
             {
                 desfazMovimento(origem, destino, pecaCapturada);
-                throw new TabuleiroException("Você não pode se colocar em xeque! ");
+                throw new TabuleiroException("Você não pode colocar seu rei em xeque! ");
             }
 
             Peca p = tab.peca(destino);
